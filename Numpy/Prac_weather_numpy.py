@@ -39,7 +39,7 @@ city2_temps = np.array([20, 22, 18, 18, 15, 10, 11, 10, 18, 12])
 # anomaly2 = abs(city2_temps - np.mean(city2_temps)) > np.var(city2_temps) * 2
 # print(anomaly1, anomaly2)
 
-#Корреляция температур между городами:
+# Корреляция температур между городами:
 # corellation = np.corrcoef(city1_temps,city2_temps)[0,1]
 # print(corellation)
 

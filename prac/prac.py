@@ -1,11 +1,17 @@
-import numpy as np
+import numpy as pn
+import pandas as pd
+import sqlite3 as sq
 
-matrix1 = np.arange(9).reshape(3,3)
-matrix2 = np.arange(9).reshape(3,3)
+def create_table(db='Trifles/avito_data.db', path='Trifles/avito_data.csv', name='avito'):
+    con = sq.connect(db)
 
-res1 = matrix1 + matrix2
-res2 = matrix1 @ matrix2
-res3 = np.linalg.det(res2)
-res4 = matrix1.T
-# res5 = np.linalg.inv(matrix1)
-print(res1, res2, res3, res4,  sep='\n')
+    df = pd.read_csv(path)
+    df.to_sql(name, con, if_exists='replace', index=False)
+    con.close()
+
+create_table()  # создание таблицы
+
+sql_request = '''SELECT * FROM avito'''  # SQL-запрос
+
+df = pd.read_csv('D:/projects/projects-python/Trifles/avito_data.csv')
+print(df)
