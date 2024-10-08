@@ -36,12 +36,4 @@ def callback_message(callback):
         bot.edit_message_text('Edit text', callback.message.chat.id, callback.message.message_id)
 
 
-
-
-
-
-
-
-
-
 bot.infinity_polling()

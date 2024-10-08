@@ -35,5 +35,4 @@ df_sep = pd.read_csv('Trifles/table.csv',
 sep_Series = df_sep['E350'] # преобраование в Series
 print(sep_Series)
 
-# ---------------------------------------------------------------------------------------
 

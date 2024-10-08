@@ -23,8 +23,8 @@ import pandas as pd
 # df = pd.DataFrame( {f'c_{i}': np.arange(1000)*i for i in range(10)})
 # print(df)
 
-# index = df.index     # возвращает RangeIndex(start=0, stop=1000, step=1)
-# columns = df.columns # возвращает список с назаваниями столбцов
+# index = df.index      # возвращает RangeIndex(start=0, stop=1000, step=1)
+# columns = df.columns  # возвращает список с назаваниями столбцов
 # df.columns = [[f'col_{i}' for i in range(10)]]
 # columns = df.columns
 
@@ -64,8 +64,18 @@ import pandas as pd
 
 # ---------------------------------------------------------------------------------------
 
-index = pd.Index([3, np.nan, 4, np.nan,5])
+# index = pd.Index([3, np.nan, 4, np.nan,5])
 
-df = pd.DataFrame(np.arange(5), index=index)
-print(df)
+# df = pd.DataFrame(np.arange(5), index=index)
+# print(df)
+
+# df.index.hasnans    # есть ли пропуски в индексах
+# df.columns.hasnans  # есть ли пропуски в столбцах
+
+# df.index.isna()     # возвращает масив в кторотом True = Nan
+# df.columns.isna()   # возвращает масив в кторотом True = Nan
+
+# df.index.dropna()   # возвращает индексы с удаленными пропусками 
+# df.columns.dropna() # возвращает столбцы с удаленными пропусками
+
 
