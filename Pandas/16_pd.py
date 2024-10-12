@@ -10,7 +10,7 @@ for name,group in groups:
     print(name)
     print(group)
 
-sum_group = df.groupby('Город работы').sum()             # возвращает датафрейм с сумой значений в группе
+sum_group = df.groupby('Город работы').sum()               # возвращает датафрейм с сумой значений в группе
 sum_group = df.groupby('Город работы', as_index=False      # as_index - будут ли отображаться имена групп в виде столбца
                        ).sum()
 

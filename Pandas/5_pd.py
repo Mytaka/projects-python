@@ -7,6 +7,7 @@ import pandas as pd
 #                     #   dtype=np.float32,
 #                       name = 'row')
 # print(index_data)
+
 # colum_data = pd.Index(['col_1','col_2','col_3'],
 #                       name = 'cols')
 
@@ -14,7 +15,7 @@ import pandas as pd
 #                    'col_2': [27, 6, 7, 4, 7],
 #                    'col_3': [1, 45, 6, 62, 7]},
 #                    index=index_data,
-#                 #    columns=colum_data
+#                    columns=colum_data
 #                    )
 # print(df)
 
@@ -55,7 +56,7 @@ import pandas as pd
 #                               'col_0' :  'lox'})
 
 # df_lox = df.rename( #{'col_1': 'Barri', 
-#                      #'col_0' :  'lox'}, 
+#                     # 'col_0' :  'lox'}, 
 #                      str.upper,
 #                      axis=1,
 #                      inplace=True # применяет сразу | inplace=False возвращает результат

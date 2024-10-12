@@ -40,8 +40,24 @@ import pandas as pd
 
 # -----------------------------------------------------------------------------------------
 
-ser1 = pd.Series([1, 2, 3, 4, 5])
-ser2 = pd.Series([4, 5, 6, 7, 8])
-ser = pd.Series(np.union1d(ser1,ser2))
-print(~ser1.isin(np.intersect1d(ser1,ser2)), ~ser2.isin(np.intersect1d(ser1,ser2)))
+# ser1 = pd.Series([1, 2, 3, 4, 5])
+# ser2 = pd.Series([4, 5, 6, 7, 8])
+# ser = pd.Series(np.union1d(ser1,ser2))
+# print(~ser1.isin(np.intersect1d(ser1,ser2)), ~ser2.isin(np.intersect1d(ser1,ser2)))
+
 # print()
+
+# -----------------------------------------------------------------------------------------
+# Рассчитай среднюю температуру для каждого месяца, построй изменение температуры по времени и 
+# определи, в каком месяце была самая высокая и самая низкая температура.
+
+df = pd.read_csv('Trifles/weather_data.csv')
+
+df['date'] = pd.to_datetime(df['date'])
+
+df['month'] = df['date'].dt.month
+
+temp = df.groupby('month').agg('temperature').mean()
+
+print('min: ',temp.min())
+print('min: ',temp.max())

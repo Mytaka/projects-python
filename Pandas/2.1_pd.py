@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 
-# pd_list = pd.Series([2,5,6.2,5,10],
-#                     index = ['row_1','row_2','row_3','row_4','row_5'], # меняет индексы
-#                     dtype='string', 
-#                     name = 'First')
-# print(pd_list)
+pd_list = pd.Series([2,5,6.2,5,10],
+                    index = ['row_1','row_2','row_3','row_4','row_5'], # меняет индексы
+                    dtype='string', 
+                    name = 'First')
+print(pd_list)
 
 # ---------------------------------------------------------------------------------------
 

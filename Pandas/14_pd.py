@@ -14,7 +14,7 @@ df.apply(np.min,               # сама функцыя
          **kwargs)             # формальные параметры
 # Series.apply(func, args(), **kwargs)
 
-df.apply(np.min)  # возвращает таблцу с здланой функцией
+df.apply(np.min)  # возвращает таблицу с заданой функцией
 
 def my_fanc(Series):
     return ( Series + 100 ) if Series.name != 'col_2' else ( Series * 0 )

@@ -102,16 +102,16 @@
 # -----------------------------------------------------------------------------------------------------------------
 #  Написати програму, яка відкриває файл mbox-short.txt, виводить на друк усі рядки, що містять значок «@» та рахує їх кількість.
 
-file = open('Uneversity/Trifles laba 8/mbox-short.txt', 'r')
-lines = file.readlines()
-file.close()
+# file = open('Uneversity/Trifles laba 8/mbox-short.txt', 'r')
+# lines = file.readlines()
+# file.close()
 
-count_line_w_sign = 0
-for i in lines:
-    if '@' in i:
-        count_line_w_sign += 1
-        print(i.rstrip())
-print('\ncount_line_w_sign: ', count_line_w_sign)
+# count_line_w_sign = 0
+# for i in lines:
+#     if '@' in i:
+#         count_line_w_sign += 1
+#         print(i.rstrip())
+# print('\ncount_line_w_sign: ', count_line_w_sign)
 
 # -----------------------------------------------------------------------------------------------------------------
 # Написати програму, яка з файлу 'feedback.txt' переписує у файл ‘positive.txt’ всі позитивні відгуки, а у файл ‘negative.txt‘ усі негативні відгуки. 

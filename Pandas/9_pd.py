@@ -3,12 +3,12 @@ import pandas as pd
 
 Indict_array = {'age': [53, 37, 11, 18, 7], 
                 'паме': ['Сергей', 'Маша', 'Ксюша', 'Аристарх', 'Соня'], 
-                         'наличие авто': [True, True, False, True, False]}
+                'наличие авто': [True, True, False, True, False]}
 df = pd.DataFrame(Indict_array)
 
-df[ [True, False, True, False, True]]  # вернеться тоько строки, где True
-df[ df['наличие авто'] ]               # можно использовать сам столбец
-df['age'] <= 11                        # вернет булевый список
+df[ [True, False, True, False, True] ]  # вернеться тоько строки, где True
+df[ df['наличие авто'] ]                # можно использовать сам столбец
+df['age'] <= 11                         # вернет булевый список
 
 # ~ - не
 # & - и

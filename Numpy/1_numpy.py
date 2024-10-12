@@ -1,5 +1,6 @@
 import numpy as np
 
+# arr["индекс масива"]["индекс строки"]["индекс столбца"]
 
 a,b,c = 2,3,4
 print(np.arange(10))

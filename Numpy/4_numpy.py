@@ -5,7 +5,7 @@ np_array1 = np.array([['x','y1'],['x','y'],['x','y'],['x','y']])
 np_array2 = np.array([['x','y1'],['x','y'],['x','y'],['x','y'],['x','y']])
 
 new_np = np.expand_dims(np_array, axis=0) # создание нового представления масива с новой осью
-new_np = np_array[np.newaxis]             #  создание нового представления масива и добавлена нулевая ось
+new_np = np_array[np.newaxis]             # создание нового представления масива и добавлена нулевая ось
 new_np = np_array[ : ,np.newaxis]         # добавлена первая ось
 new_np = np_array[ : ,np.newaxis, :]      # добавлена нулевая и вторая оси
 new_np = np_array[ ... ,np.newaxis]       # добавлена последняя ось

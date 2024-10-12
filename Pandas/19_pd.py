@@ -16,7 +16,7 @@ df = pd.DataFrame({'id' : range(10000,10020),
 # df['day_name'] = df['date'].dt.day_name() # .dt (аксцесор)- поэлементно .day_name() - вызов дня
 # df['day'] = df['date'].dt.day
 # df['month'] = df['date'].dt.month
-# # df['weekday'] = df['date'].dt.weekday   # день недели но в цифровом формате
+# df['weekday'] = df['date'].dt.weekday   # день недели но в цифровом формате
 
 df.loc[ df['date'] == pd.to_datetime('03-08-2016', format='%d-%m-%Y')] #перед тем, как проверять наличие даты, нужно поставить правильный формат
 

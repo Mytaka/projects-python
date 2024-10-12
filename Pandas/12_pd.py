@@ -36,6 +36,6 @@ df.loc['row_0': 'row_2', ['age', 'name']] = pd.DataFrame({'age': ['Сергей'
                                                                   'name': [22, 33, 44]}, 
                                                                   index=['row_0', 'row_1', 'row_2'])
 
-df.loc[:, ['name', 'age']] = df[['age', 'name']].to_numpy() # менять метами столбцы
+df.loc[:, ['name', 'age']] = df[['age', 'name']].to_numpy() # менять меcтами столбцы
 
 print(df.iat[0, 1])

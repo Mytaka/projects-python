@@ -44,13 +44,12 @@ flag = input('start(1) | standart(2) | revers(3) | random(4): ')
 if flag in ['1','2','3']:
     match flag:
         case '1':
-            df_words = df[df.columns[:2:]]
-            df_words = df_words[df_words.columns[::-1]]
-            print(df_words)
+            df_words = pd.DataFrame(df,
+                                    columns=['eng','ukr'])
         case '2':
-            df_words = df[df.columns[:2:]]
+            df_words = df[df.columns[:2]]
         case'3':
-            df_words = df[df.columns[:2:]]
+            df_words = df[df.columns[:2]]
             df_words = df_words.iloc[::-1, :]
             df = df.iloc[::-1, :].reset_index(drop=True)
 
@@ -78,7 +77,7 @@ if flag == '4':
     random_nums = np.random.choice(np.arange(0,len(ukr)), size=(len(ukr)), replace=False)
     
     for index in range(len(ukr)):
-        random_num = random_nums[index]   # переименовать 'random_num' на 'index'  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        random_num = random_nums[index]   
         ukr_word = df.iat[random_num,0] 
         
         start_time = time()

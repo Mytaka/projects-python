@@ -9,11 +9,10 @@ dict = {'col1': [5, 6, 6, 3, 7],   # количество элементов д�
 
 df = pd.DataFrame(dict,
                   index=['row_1','row_2','row_3','row_4','row_5'],
-                  columns=['col1','col4','5'],
+                  columns=['col4','col1','5'],
                   dtype=int,
                   copy=False) # используеться одна и та же ячейка памяти
                               # copy=True - создаеться новая ячейка памяти
-df.rename(columns={'col1':'lox'})
 
-print()
+print(df)
 

@@ -19,10 +19,10 @@ df = pd.DataFrame(dct)
 df.min()
 df['col_1'].mean()
 
-a = df.agg(np.min, axis=1)           # возвращает табл. с зделаной функцией
-b = df.agg([np.min, np.max,np.mean]) # возвращает табл. с зделаными функциями
+a = df.agg(np.min, axis=1)           # возвращает табл. с сделаной функцией
+b = df.agg([np.min, np.max,np.mean]) # возвращает табл. с сделаными функциями
 
-df.agg({'col_1': [np.min, np.sum],   # возвращает табл. с зделаными функциями
+df.agg({'col_1': [np.min, np.sum],   # возвращает табл. с сделаными функциями
         'col_3': 'mean'})
 
 df.agg(min_col_1=('col_1', 'min'), max_col_2=('col_2', np.max))
